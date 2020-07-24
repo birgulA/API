@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uk.co.huntersix.spring.rest.controller.CustomRestExceptionHandlerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-07-21T10:54:43" hostname="Birguls-MacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="shouldHandleRestException" classname="uk.co.huntersix.spring.rest.controller.CustomRestExceptionHandlerTest" time="0.002"/>
+  <testcase name="shouldHandleAllException" classname="uk.co.huntersix.spring.rest.controller.CustomRestExceptionHandlerTest" time="0.005"/>
+  <system-out><![CDATA[2020-07-21 11:54:43.046  INFO 48318 --- [    Test worker] u.c.h.s.r.e.CustomRestExceptionHandler   : resolveRestException::code
+2020-07-21 11:54:43.052 ERROR 48318 --- [    Test worker] u.c.h.s.r.e.CustomRestExceptionHandler   : Global error occurred::message
+
+java.lang.Exception: message
+	at uk.co.huntersix.spring.rest.controller.CustomRestExceptionHandlerTest.shouldHandleAllException(CustomRestExceptionHandlerTest.java:41) ~[test/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:79) ~[mockito-core-2.23.4.jar:na]
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:85) ~[mockito-core-2.23.4.jar:na]
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39) ~[mockito-core-2.23.4.jar:na]
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163) ~[mockito-core-2.23.4.jar:na]
+	at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:53) ~[mockito-core-2.23.4.jar:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) ~[na:na]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) ~[na:na]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) ~[na:na]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:835) ~[na:na]
+Caused by: java.lang.Throwable: null
+	... 53 common frames omitted
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

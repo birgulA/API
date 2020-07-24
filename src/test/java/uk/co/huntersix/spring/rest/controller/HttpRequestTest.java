@@ -25,7 +25,7 @@ public class HttpRequestTest {
     public void shouldReturnPersonDetails() throws Exception {
         assertThat(
             this.restTemplate.getForObject(
-                "http://localhost:" + port + "/person/smith/mary",
+                "http://localhost:" + port + "/api/v1/person/smith/mary",
                 String.class
             )
         ).contains("Mary");

@@ -3,7 +3,10 @@ package uk.co.huntersix.spring.rest.model;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Person {
-    private final AtomicLong counter = new AtomicLong();
+    //When a person object is initialing, counter starts from 1 but we need counter as a class
+    //specific to keep number of objects
+    // so we can assign counter as an id. For this I changed to static to fix failing unit test
+    private final static AtomicLong counter = new AtomicLong();
 
     private Long id;
     private String firstName;
