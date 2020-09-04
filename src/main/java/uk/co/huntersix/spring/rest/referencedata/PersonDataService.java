@@ -27,7 +27,7 @@ public class PersonDataService
 
         if ( CollectionUtils.isEmpty( personList ) )
         {
-            throw new RestException( "Person not found", HttpStatus.NO_CONTENT );
+            throw new RestException( "Person not found", HttpStatus.NOT_FOUND );
 
         }
         return personList.get( 0 );

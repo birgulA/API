@@ -60,9 +60,9 @@ public class PersonControllerTest
     public void shouldReturnNoContentWhenPersonCanNotFoundByNameAndSurname() throws Exception
     {
         when( personDataService.findPerson( any(), any() ) ).thenThrow(
-            new RestException( "Person not found", HttpStatus.NO_CONTENT ) );
+            new RestException( "Person not found", HttpStatus.NOT_FOUND ) );
         mockMvc.perform( MockMvcRequestBuilders.get( "/api/v1/person/ayaz/birgul" ) )
-            .andExpect( status().isNoContent() )
+            .andExpect( status().isNotFound() )
             .andExpect( content().string( StringContains.containsString( "Person not found" ) ) )
             .andReturn();
     }
